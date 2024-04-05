@@ -1,0 +1,415 @@
+/* Custom CSS */
+header {
+    background-color: #424242;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.logo {
+    align-content: center;
+    margin-top: 50px;
+    background-color: #424242;
+    box-shadow: #131313 10px 10px 10px;
+    padding: 20px;
+}
+
+/* Header Styles */
+
+#home {
+    background-color:  #424242;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+}
+.btn1 {
+    background-color:#FFF225;
+    border-radius: 10px;
+    box-shadow: #131313 5px 5px 5px;
+    border-color: #F9ED32;
+    color: #131313;
+}
+
+/* social iccons  */
+.social {  
+    list-style-type: none;
+    padding: 0;
+    background-color: #131313;
+}
+
+
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.social li a {
+    color:  #FFF225;
+}
+
+.social li a:hover {
+    color: #F9ED32;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color:#131313;
+    color: #FFFFFF;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    align-content: center;
+}
+
+.footer-nav a {
+    color: #FFFFFF;
+}
+
+.footer-nav a:hover {
+    color: #F9ED32;
+}
+  #social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    .social {
+      padding-left: 0px;
+    }
+    li {
+      color: rgba(167, 146, 129, 0.6);
+      list-style-type: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 1%;
+      border: 1px solid rgba(167, 146, 129, 0.4);
+      cursor: pointer;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      transition: ease .3s;
+      &:hover {
+        color: yellow;
+        border: 1px solid yellow;
+      }
+    }
+  }
+  
+  .social:hover > li {
+    opacity: 0.5;
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+  }
+
+/* Keyframes for responsiveness */
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 576px) {
+    #logo {
+        padding: 20px;
+    }
+
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo img {
+        width: 550px;
+        height: auto;
+    }
+}
+
+/* Keyframe animation */
+.logo img,
+#home h1,
+#home p,
+#home a {
+    animation: scaleIn 2s ease-out;
+}
+/* Product */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;}
+
+/* Rhyno SE03 Lite */
+.container p{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.container compareAll{
+    background-color: #131313;
+}
+.table{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    animation: floating 1.5s infinite;
+}
+
+.image-container img:hover{
+    box-shadow: 10px 10px 10px #F9ED32;
+
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Rhyno SE03 Specification */
+/* contact */
+.contact-info {
+    background-color: #373737;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px; 
+    box-shadow: 10px 10px 10px #424242;
+}
+
+.contact-info:hover {
+    box-shadow:#F9ED32 5px 5px 5px;
+    
+}
+
+#about{
+    background-color: #373737;    ;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    padding: 50px;
+    box-shadow: 10px 10px 10px #424242;
+}
+
+#about:hover {
+    box-shadow:#F9ED32 5px 5px 5px;
+}
+
+.text-center p{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.text-center h2{
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #373737;
+}
+.text-center h2:hover{
+    box-shadow: 5px 5px 5px #FFF225;
+}
+
+
+------------------------------------
+
+/* Custom CSS */
+.carousel-item {
+    height: 100vh;
+    min-height: 0px;
+    background: no-repeat center center scroll;
+
+}
+
+.card {
+    box-shadow: 5px 5px 5px #424242;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px #424242;
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.card-title {
+    font-weight: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-text {
+    font-weight: 300px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+} 
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation */
+.card {
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #F9ED32;
+    color: #131313;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #424242;
+    transition: 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+Carousel Control Color
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;;
+}
+
+/* Active Carousel Indicator */
+.carousel-indicators .active {
+  background-color: transparent;;
+}
+
+/* rental */
+.rental-options {
+    background-color: #424242;
+    color: #FAFAFA;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px #131313;
+}
+.rental-options:hover{
+    box-shadow: 5px 5px 5px #FFF225;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #131313;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #FFF225;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn-icon {
+    display: inline-block;
+    animation: floating 1.5s infinite;
+    margin-right: 10px;
+}

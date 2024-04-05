@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USP Carousel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom CSS */
+    .carousel-item {
+        height: 50vh;
+        min-height: 0px;
+        background: no-repeat center center scroll;
+ 
+    }
+
+    .card {
+      border:#0a0a0a;
+      border-radius: 50px;
+      box-shadow: 10px 10px 10px grey  
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-body {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .card-title {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 500px;;
+    }
+
+    .card-text {
+      /* color: #000000;
+      font-size: 1rem;
+    } */
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation */
+    .card {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    Carousel Control Color
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000000;
+    }
+
+    /* Active Carousel Indicator */
+    .carousel-indicators .active {
+      background-color: #0a0a0a;
+    }
+  </style>
+</head>
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ul>
+    <div class="carousel-inner">
+      <!-- Card 1 -->
+      <div class="carousel-item active">
+        <div class="card bg-warning text-white">
+          <div class="card-body">
+            <h5 class="card-title">LFP Battery</h5>
+            <p class="card-text">Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries, renowned for their safety features—eliminating the risk of fire associated with other Lithium batteries. These batteries boast a broader temperature range, ideal for the diverse Indian climate. Our technology enhances Rhyno's longevity, complemented by an Active Balancing Smart Battery Management System (BMS) for extended life and reduced maintenance. Each battery undergoes rigorous waterproofing tests according to IP76 standards. But it doesn't stop there—our technology goes the extra mile in ensuring the battery's lasting durability. Connect with us to discover the thoughtful engineering behind our batteries!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="carousel-item">
+        <div class="card bg-info text-white">
+          <div class="card-body">
+            <h5 class="card-title">Wider Tyres</h5>
+            <p class="card-text">Now, say goodbye to skidding and embrace the leaning turns! Featuring first-of-its-kind, 9.5-inch wider tyres that make this machine an enormous beast that ensures stability on different terrains such as wet roads, mud, and sand.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="carousel-item">
+        <div class="card bg-success text-white">
+          <div class="card-body">
+            <h5 class="card-title">Range Prediction</h5>
+            <p class="card-text">Many budget-friendly electric scooters overlook this crucial feature, causing riders to experience range anxiety. With Rhyno, you can ride with peace of mind, thanks to the scooter providing precise information about the remaining battery.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="carousel-item">
+        <div class="card bg-danger text-white">
+          <div class="card-body">
+            <h5 class="card-title">Extraordinary Experience</h5>
+            <p class="card-text">Rhyno is more than just a mode of transportation. It is an experience of sheer comfort and style! A seamless fusion of minimalism, sophistication, and a touch of masculinity!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="carousel-item">
+        <div class="card bg-secondary text-white">
+          <div class="card-body">
+            <h5 class="card-title">Rugged and Simple Design</h5>
+            <p class="card-text">We’ve had enough of the EVs looking and feeling like fragile plastic toys. Often fading out and shamelessly breaking in minor accidents, ending up spending weeks and months at service stations for complex repairs. We took a bold step of making something raw, rugged, and practical. We kept it so simple that even your trusted local mechanic can understand and repair most of it. If you have reached this far, why not to take a test ride? Click here to locate your nearest dealership or book a test ride at your home!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
